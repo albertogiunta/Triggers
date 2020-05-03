@@ -4,12 +4,12 @@ on:
   schedule:
     # UTC time: -2 hours wrt Rome/IT
 #    - cron:  '0 17 * * 5'
-    - cron:  '55 14 * * 0'
+    - cron:  '56 14 * * 0'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
      - name: Linksaber - V1 - Trigger Friday Digest
-       run: curl -X POST $FCF_HOST/api/v1/users/sendMail/weekly
+       run: curl -s -X GET $FCF_HOST/api/v1/users/sendMail/weekly
        env:
         FCF_HOST: ${{ secrets.FCF_HOST }}
