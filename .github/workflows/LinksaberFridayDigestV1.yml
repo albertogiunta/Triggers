@@ -2,8 +2,9 @@ name: LinksaberFridayDigestV1
 
 on:
   schedule:
+    # UTC time: -2 hours wrt Rome/IT
 #    - cron:  '0 17 * * 5'
-    - cron:  '22 16 * * 0'
+    - cron:  '26 14 * * 0'
 jobs:
   build:
     runs-on: ubuntu-latest
