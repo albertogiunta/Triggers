@@ -3,7 +3,7 @@ name: LinksaberFridayDigestV1
 on:
   schedule:
     # UTC time: -2 hours wrt Rome/IT
-    - cron:  '0 15 * * 5'
+    - cron:  '0 0/1 * * 5'
 jobs:
   build:
     runs-on: ubuntu-latest
