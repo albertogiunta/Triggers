@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Linksaber - V1 - Trigger Friday Digest
-       run: curl -s -X GET $FCF_HOST/api/v1/users/sendMail/weekly
+       run: curl -s -X GET $FCF_HOST/api/v1/users/sendMail/weekly/production
        env:
         FCF_HOST: ${{ secrets.FCF_HOST }}
