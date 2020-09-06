@@ -4,7 +4,7 @@ on:
   schedule:
     # UTC time: -2 hours wrt Rome/IT
     # debug: https://crontab.guru/#0_0/1_*_*_5
-    - cron:  '0 0/1 * * 5'
+    - cron:  '0 0/1 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
